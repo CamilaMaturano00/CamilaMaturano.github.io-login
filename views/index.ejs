@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="/resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Oxygen:wght@300&family=Roboto:ital,wght@1,900&family=Rubik:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <% if(login) { %>
+        <header class="header" id="inicio">
+            <div class="contenedor head">
+                <h1>Bienvenido a nuestro sitio : <strong><%= name %></strong></h1>            </div>
+        </header>
+        <a href="logout" class="a-logout">Logout</a>
+        <%} else {%>
+        <h1><strong><%= name %></strong></h1>
+        <a href="login" class="a-login">Ir al LOGIN</a>
+    <% } %>
+    
+
+</body>
+</html>
